@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="./JS/home-page.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+  
+<div class="home">
+    <div class="home-nav">
+        <img src="../Images/medium.svg" alt="Medium">
+        <div class="home-nav-profile">
+            <a href="./pages/log-in.html">Login</a>
+            <a href="./pages/sign-up.html">Sign Up</a>
+            <a href="./pages/dashboard.html">Dashboard</a>
+        </div>
+    </div>
+    <header></header>
+
+    <div class="articles">
+        <h2>All articles</h2>
+    </div>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper"  data-swiper-autoplay="2000">
+        
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+</div>
+
+
+
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: false,
+        autoplay: {
+          delay: 2000
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>

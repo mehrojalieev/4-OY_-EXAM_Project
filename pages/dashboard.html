@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="../JS/dashboard.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/style.min.css">
+    <title>DASHBOARD</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside>
+            <div class="aside-menu">
+                <h2>Dashboard</h2>
+                <div class="aside-user posts">
+                    <img src="../Images/uuu.svg" alt="U">
+                    <div>
+                        <p>Aliyev Mehrojbek</p>
+                        <strong>Author</strong>
+                    </div>
+                </div>
+                <div class="create-post posts">
+                    <h3 class="create-post-text">Create Post</h3>
+                </div>
+                <div class="manage-post">
+                    <h3 class="manage-post-text">Manage Posts</h3>
+                </div>
+            </div>
+
+            <p class="aside-signout">Sign Out ?</p>
+        </aside>
+
+        <main>
+            <div class="create-post-wrapper">
+                <div class="create-post-title">
+                    <h2>Create New Post</h2>
+                </div>
+
+                <form data-content-name="create" id="create-post-form">
+
+                    <div class="post-title-container">
+                        <label for="Post Title">Post Title</label>
+                        <input type="text" id="post-title">
+                    </div>
+
+                    <div class="post-image-container">
+                        <label for="Post Image">Post Image</label>
+                        <div class="post-inputs">
+                            <input type="text" id="post-image">
+                            <select id="create-select">
+                                <option selected disabled>Select post category</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="post-description">
+                        <h2>Post description</h2>
+                        <textarea id="post-description"></textarea>
+                    </div>
+                    <button type="submit">Create Post</button>
+                </form>
+            </div>
+
+            <div class="manage-post-wrapper">
+                <div class="manage-post-title">
+                    <h2>Manage Posts</h2>
+                </div>
+                <div class="manage-posts-container">
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="modal-wrapper">
+        <div class="signout-modal">
+            <h3>Sign Out ?</h3>
+            <p>Do you want to Sign Out? Really?</p>
+            <button id="aside-signout-btn">Sign Out</button>
+            <button class="close-signout"><i class="bi bi-x-circle"></i></button>
+        </div>
+    </div>
+    <div class="update-modal">
+        <form id="update-form">
+            <h2>Update Post</h2>
+            <div class="update-title">
+                <label for="Post title">Post title</label>
+                <input type="text">
+            </div>
+            <select>
+                <option>Select post category</option>
+                <option>#technology</option>
+            </select>
+            <div class="update-image">
+                <label for="Post image">Post image</label>
+                <input type="url">
+            </div>
+            <div class="update-description">
+                <label for="description">Post Description</label>
+                <textarea></textarea>
+            </div>
+            <button type="submit" id="update-btn">Create Post</button>
+        </form>
+        <button id="close-update-btn"><i class="bi bi-x-circle"></i></button>
+    </div>
+    <div class="delete-modal">
+        <h2>Delete Post</h2>
+        <p>Are you sure to delete this post?</p>
+        <button id="delete-post">Delete</button>
+        <button id="close-delete-btn"><i class="bi bi-x-circle"></i></button>
+    </div>
+</body>
+
+</html>

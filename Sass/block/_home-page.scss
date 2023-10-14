@@ -1,0 +1,159 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin f-style($f-size, $color, $f-weight){
+    font-size: $f-size;
+    color: $color;
+    font-weight: $f-weight;
+};
+
+
+$myFont: 'Jomolhari', serif;
+$robotoFont: 'Roboto', sans-serif;
+
+body{
+    background-color: black;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.home-nav{
+    width: 100%;
+    max-width: 1250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-nav-profile{
+    display: flex;
+    align-items: center;
+    gap: 0px 40px;
+    a{
+        text-decoration: none;
+        @include f-style(18px, #fff, 500);
+        font-family: $robotoFont;
+        
+    }
+}
+
+header{
+    width: 100%;
+    height: 416px;
+    background-image: url("../../Images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+
+.articles{
+    width: 1200px;
+    margin-top: 40px;
+    h2{
+        @include f-style(46px, #fff, 400);
+        font-family: $myFont;
+    }
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 335px;
+    margin: 50px 0 30px 0;
+    padding: 0px 5px;
+    background-color: black;
+  }
+
+  .swiper-slide {
+    width: 274px;
+    height: 336px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // gap: 15px 0;
+    align-items: center;
+    border: 3px solid gold;
+    margin: 0px 6px;
+    padding: 5px 3px;
+    text-decoration: none;
+    cursor: pointer;
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        // align-items: center;
+        gap: 20px 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1e1e1e;
+        color: #fff;
+        h3{
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        p{
+            font-size: 16px;
+        }
+        img{
+            width: 40px;
+            height: 37px;
+        }
+        .item-profil{
+            display: flex;
+            align-items: center;
+            gap: 0px 8px;
+            margin-left: 10px;
+            div{
+                text-align: left;
+            }
+        }
+    }
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+
+  
+  .about-wrapper{
+    width: 1100px;
+    height: 600px;
+    margin: 30px auto 0;
+    .about-category{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        h3{
+            @include f-style(28px, #fff, 400);
+            font-family: $myFont;
+        }
+        strong{
+            @include f-style(20px, #fff, 400);
+        }
+        
+    }
+    img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: 30px auto 20px;
+    }
+    p{
+        color: #fff;
+        font-size: 20px;
+    }
+  }

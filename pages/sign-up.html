@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/style.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="../JS/sign-up.js"></script>
+    <title>SIGN-UP</title>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="signup-wrapper">
+            <img src="../Images/medium.svg" alt="Medium">
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Firstname" id="firstname">
+                <input type="text" placeholder="Lastname" id="lastname">
+                <input type="email" placeholder="Email" id="email" autocomplete="off">
+                <p class="success-message">Valid</p>
+                <p class="error-message">Email is invalid</p>
+                <div class="password-input">
+                    <input type="password" placeholder="Password" id="password">
+                    <button type="button" class="showPassword"><i class="fa-solid fa-eye "></i></button>
+                </div>
+                <p class="password-message">Minimum eight characters, at least one letter and one number:</p>
+                <div class="login-link">
+                    <p>Already have an account? <a href="./log-in.html">Login</a></p>
+                </div>
+                <button type="submit" id="signup-btn">
+                    <div class="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    Sign Up
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

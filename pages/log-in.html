@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../style/style.min.css">
+        <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="../JS/login.js"></script>
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-wrapper">
+            <img src="../Images/medium.svg" alt="Medium">
+            <form id="login-form">
+                <h2>Login </h2>
+                <input type="email" placeholder="Email" id="login-email" autocomplete="off">
+                <p class="success-message">Valid</p>
+                <p class="error-message">Email is invalid</p>
+                <div class="password-input">
+                    <input type="password" placeholder="Password" id="login-password">
+                    <button type="button" class="showPassword"><i class="fa-solid fa-eye "></i></button>
+                </div>
+                <p class="password-message">Minimum eight characters, at least one letter and one number:</p>
+                <div class="signup-link">
+                    <p>Don't you have an account? <a href="./sign-up.html">Sign up</a></p>
+                </div>
+                <button type="submit" id="login-btn">
+                    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
